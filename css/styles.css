@@ -145,7 +145,7 @@ a{
     justify-content:center;
     align-items:start;
 }
-.info-about-me>p{
+.info-about-me p{
     color:var(--bs-light);
     text-align:justify;
 }
