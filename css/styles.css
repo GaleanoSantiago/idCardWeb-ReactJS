@@ -1,0 +1,569 @@
+                            /*--- Estilos creados por Galeano Santiago ---*/
+/*---------------------------- Aspectos Generales ----------------------------*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+:root {
+    --bg: #3C465C;
+    --primary: #78FFCD;
+    --solid: #fff;
+    --celesteClaro:#769ECB;
+    --azulGris:#758f9c;
+    --azulMorado:#516091;
+
+    /*prueba*/
+    --bs-blue: #0d6efd;
+    --bs-indigo-: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-black: #000;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-gray-100: #f8f9fa;
+    --bs-gray-200: #e9ecef;
+    --bs-gray-300: #dee2e6;
+    --bs-gray-400: #ced4da;
+    --bs-gray-500: #adb5bd;
+    --bs-gray-600: #6c757d;
+    --bs-gray-700: #495057;
+    --bs-gray-800: #343a40;
+    --bs-gray-900: #212529;
+    --bs-primary: #0d6efd;
+    --bs-secondary: #6c757d;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+    --funBlue:#175a9e;
+    --shark:#1e1e1f;
+    --white_1:#f6f7f1;
+    --bg-colorVidrio:rgba(255, 255, 255, .15);
+    --backdrop-filterVidrio:blur(5px);
+    --azulIntenso:#090979;
+    --negroIn:#020024;
+    --rojoOscuro:#C81D11;
+    --rojoBrillante: #FF0800;
+    --celesteBrillante:#00d4ff;
+    --azulFooter:#1b2a4e;
+    --azulNavBar: rgb(17, 0, 255);
+    --blackTitulos:#444649;
+    --greyPs:#616161;
+    --blackYT:#181818;
+    --linesYT:#303030;
+    --blackYT2:#202020;
+    --blackYT3:#313131;
+    --whiteYT:#f9f9f9;
+    --tittlepurple:#1f2667;
+    /* --z1:#232741; */
+    --z1:#0f172a;
+    --z2:#2c2e43;
+    --z3:#222733;
+    --z4:#080d17;
+    --dark-github:#0d1117;
+    --dark-github-2: #161b22;
+    --dark-beauty:#1e242c;
+    --dark-beauty-2:#171925;
+    --dark-brauty-3:#252934;
+
+    /* Colores nuevos */
+    --bs-indigo: #BE1206;
+    --blur-indigo: rgba(74, 52, 169, 0.6);
+
+    --gameBlue: #0f172a; /*15 23 42*/
+    --gameBlueLight: #1e293b; 
+    --gameLips: #be123c; /*190 18 60*/
+    --gameBlood: #BE1206; /*190 18 6*/
+}
+
+body{
+    font-family: sans-serif;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+    scroll-behavior: smooth;
+    background:var(--z1);
+
+}
+
+.titulo-h1{
+    color:var(--bs-primary);
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.subrayado{      
+    padding:.5px;
+    background: rgb(255,0,0);
+    background: radial-gradient(circle, rgba(255,0,0,1) 0%, rgba(2,0,36,0) 100%);
+    margin:auto;
+    /* opacity:1; */
+    animation: fade-sub 2s ease;
+    animation-delay:.4s;
+}
+
+@keyframes fade-sub{
+    0%{
+        width:0;
+    }
+    100%{
+        width:100%;
+    }
+}
+
+a{
+    text-decoration:none;
+}
+/*--------------------------------- Sobre Mi -----------------------------*/
+
+.section-about-me{
+    width: 100%;
+
+    /* background:var(--z1); */
+    padding:40px 0 ;
+}
+
+
+.contenedor-about-me>.row{
+    padding-top:40px;
+}
+
+.info-about-me{
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:start;
+}
+.info-about-me>p{
+    color:var(--bs-light);
+    text-align:justify;
+}
+
+.info-about-me a{
+    transition:color .3s;
+}
+
+@media (hover: hover){
+	.info-about-me a:hover{
+        color:var(--bs-indigo);
+        transition:color .3s;
+    }
+}
+.info-about-me a:active{
+    color:var(--bs-indigo);
+    transition:color .3s;
+}
+
+.info-about-me img{
+    width:30px;
+}
+
+.info-about-me ul{
+    list-style-type:circle;
+}
+
+.info-about-me ul>li{
+    text-align: start;
+}
+
+
+.pic-of-me{
+    border:1px solid #fff;
+    width:300px;
+    height:300px;
+    border-radius:500px;
+    background:url("../img/perfil-edit.webp");
+    background-size:cover;
+    background-position-y:20%;
+    overflow:hidden;
+    margin:40px auto;
+    animation: flotar 3s ease infinite;
+    animation-delay: .5s;
+    
+}
+            
+@keyframes flotar{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(9px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.pic-of-me>img{
+    width:100%;
+    height:100%;
+    object-fit:cover;       /*Para que la imagen no se quede chata :/ */
+    transform:scale(1.2);
+}
+
+.sombra{
+    height:4px;
+    width:230px;
+    border-radius:10px;
+    margin:auto;
+    margin-bottom:15px;
+    margin-top:20px;
+    box-shadow:2px -10px 5px black;
+    animation: efectoSombra 3s ease infinite;
+    animation-delay: .5s;
+}
+
+@keyframes efectoSombra{
+    0%{
+        width:210px;
+        box-shadow:2px -10px 5px var(--bs-black);
+    }
+    50%{
+        width:250px;
+        box-shadow:2px -10px 5px #000000;
+
+    }
+    100%{
+        width:210px;
+        box-shadow:2px -10px 5px var(--bs-black);
+
+    }
+}
+
+
+.social-media{
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.sm-icon{
+    height:50px;
+    width:50px;
+    border:1px solid #fff;
+    border-radius:300px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
+}
+
+.sm-icon>a{    
+    display:flex;
+    height:50px;
+    width:50px;
+    border-radius:100%; 
+    transition:.3s;
+
+}
+
+.sm-icon>a>svg{
+    margin:auto;
+    width:100%;
+    transition:.3s;
+    fill:#fff;
+
+}
+
+
+@media (hover: hover){
+	.sm-icon:hover{
+        background:var(--bs-light);
+        transition:.3s;
+    }
+    .sm-icon:hover svg{
+        fill:var(--bs-indigo);
+        transition:.3s;
+        animation:zoom-pop .6s ease;
+    
+    }
+}
+.sm-icon:active{
+    background:var(--bs-light);
+    transition:.3s;
+}
+.sm-icon:active svg{
+    fill:var(--bs-indigo);
+    transition:.3s;
+    animation:zoom-pop .6s ease;
+
+}
+
+@keyframes zoom-pop{
+    0%{
+        transform:scale(1);
+    }
+    50%{
+        transform:scale(1.2);
+    }
+    100%{
+        transform:scale(1);
+    }
+}
+
+/* Nueva miniseccion */
+.col-conocimientos ul{
+    padding:0;
+}
+.col-conocimientos li{
+    list-style:none;
+}
+
+.col-conocimientos li img{
+    width:20px;
+}
+/* ------------------------------------------Seccion de media querys------------------------------------------ */
+/* Escritorio extra grande */
+@media only screen and (min-width: 1200px){
+
+}
+
+/* Escritorio grande */
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+
+}
+
+/* Escritorio pequeño / tablet */
+@media only screen and (min-width: 768px) and (max-width: 991px){
+
+    
+    /*----------------------------Seccion sobre mi----------------------------*/
+    p, li{
+        font-size:15px;
+    }
+    
+    .section-about-me>.container{
+        min-width:95% !important;
+    }
+    
+    .contenedor-about-me>.row{
+        padding-top:20px;
+    }
+    
+    .info-about-me>h3{
+        text-align:left;
+    }
+}
+
+/* Tablets y phablets */
+@media only screen and (min-width: 576px) and (max-width: 767px){
+
+    p, li{
+        font-size:13px;
+    }
+    /*----------------------------Sobre mi----------------------------*/
+    .contenedor-about-me>.row{
+        padding-top:0;
+    }
+    .pic-of-me{
+        width:250px;
+        height:250px;
+        margin:30px auto;
+        margin-top:30px;
+    }
+    
+    .sombra{
+        
+        width:180px;
+        
+        animation: efectoSombra 3s ease infinite;
+        animation-delay: .5s;
+    }
+
+    @keyframes efectoSombra{
+        0%{
+            width:160px;
+            box-shadow:2px -10px 5px var(--bs-black);
+        }
+        50%{
+            width:180px;
+            box-shadow:2px -10px 5px #000000;
+    
+        }
+        100%{
+            width:160px;
+            box-shadow:2px -10px 5px var(--bs-black);
+    
+        }
+    }
+
+    .social-media{
+        margin:auto;
+        width:70%;  
+    }
+    
+
+    .info-about-me{
+        padding:30px 0;
+        
+    }
+}
+
+/*Celulares*/
+@media only screen and (max-width: 575px){
+    p, li{
+        font-size:13px;
+    }
+/*----------------------------Sobre mi----------------------------*/
+    
+    .contenedor-about-me>.row{
+        padding-top:0;
+    }
+    .pic-of-me{
+        width:250px;
+        height:250px;
+        margin:30px auto;
+        margin-top:30px;
+    }
+    
+    .sombra{
+        
+        width:180px;
+        
+        animation: efectoSombra 3s ease infinite;
+        animation-delay: .5s;
+    }
+    
+    @keyframes efectoSombra{
+        0%{
+            width:160px;
+            box-shadow:2px -10px 5px var(--bs-black);
+        }
+        50%{
+            width:180px;
+            box-shadow:2px -10px 5px #000000;
+    
+        }
+        100%{
+            width:160px;
+            box-shadow:2px -10px 5px var(--bs-black);
+    
+        }
+    }
+
+    .social-media{
+        margin:auto;
+        width:70%;  
+    }
+    
+
+    .info-about-me{
+        padding:20px  0;
+
+        margin: auto 10px;
+    }
+
+    .info-about-me h3{
+        text-align:left;
+        font-size:19px;
+    }
+    .info-about-me li{
+        font-size:12px;
+    }
+}
+
+/* Mediaqueries especial pantallas pequeñas */
+@media only screen and (max-width:465px){
+
+}
+
+/* Celulares Angostos */
+@media only screen and (max-width:375px){
+
+}
+
+/*Celulares extra angostos*/
+@media only screen and (max-width:365px){
+
+    p, li{
+        font-size:12px;
+    }
+    .info-about-me li, p{
+        font-size:12px;
+    }
+    .contenedor-contact p{
+        font-size:12px;
+    }
+
+/*----------------------------Seccion sobre mi----------------------------*/
+
+    .contenedor-about-me>.row{
+        padding-top:0;
+    }
+    .pic-of-me{
+        width:200px;
+        height:200px;
+        margin:30px auto;
+        margin-top:30px;
+    }
+    
+    .sombra{
+        
+        width:130px;
+        
+        animation: efectoSombra 3s ease infinite;
+        animation-delay: .5s;
+    }
+    
+    @keyframes efectoSombra{
+        0%{
+            width:110px;
+            box-shadow:2px -10px 5px var(--bs-black);
+        }
+        50%{
+            width:130px;
+            box-shadow:2px -10px 5px #000000;
+    
+        }
+        100%{
+            width:110px;
+            box-shadow:2px -10px 5px var(--bs-black);
+    
+        }
+    }
+
+    .social-media{
+        margin:auto;
+        width:70%;  
+    }
+    
+    .sm-icon{
+        height:40px;
+        width:40px;
+        
+    }
+    
+    .sm-icon>a{
+        height:40px;
+        width:40px;
+
+    
+    }
+    
+    .sm-icon>a>svg{
+        margin:auto;
+        width:100%;
+        transition:.3s;
+    
+    }
+    .info-about-me{
+        margin: auto 0;
+    }
+
+
+}
+
+/*Celulares extra angostos*/
+@media only screen and (max-width: 352px){
+
+}
