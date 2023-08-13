@@ -355,7 +355,7 @@ a{
     }
 }
 
-/* Tablets y phablets */
+/* Tablets y smartphones */
 @media only screen and (min-width: 576px) and (max-width: 767px){
 
     p, li{
